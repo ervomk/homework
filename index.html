@@ -1,43 +1,79 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>SEDC Homework GIT Bower</title>
-        <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <!--[if lt IE 9]>
+
+<head>
+    <meta charset="utf-8">
+    <title>SEDC Homework GIT Bower</title>
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    
+    <!--[if lt IE 9]>
             <script src="scripts/html5shiv.js"></script>
         <![endif]-->
-        <style>
-            h1{
-                font-size: 20px;
-                line-height: 25px;
-                text-align: center;
-                margin-bottom: 30px;
-            }
-            p{
-                display: inline-block;
-                width: 33%;
-                padding: 10px;
-                background:red;
-                margin-bottom: 10px;
-                color: white;
-                text-align: center;
-            }
-        </style>
-    </head>
+    <style>
+        
+        *{outline: none;}
+        
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-size: 25px;
+            line-height: 30px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            margin: auto;
+            display: block;
+            margin-top: 30px;
+            font-size: 100%;
+        }
+        
+        ul.ui-autocomplete{
+            width: 100% !important;
+            background-color: #eaeaea;
+            margin: 0;
+            position: static !important;
+            margin: auto;
+        }
+        
+        ul li{
+            padding: 10px;
+            background-color: rgba(31, 144, 195, 0.46);
+            border-bottom: 1px solid white;
+            cursor: pointer;
+            color: white;
+            font-size: 20px;
+            line-height: 25px;
+        }
+        
+        ul li:hover{
+            background-color: rgba(31, 144, 195, 0.77);
+            transition:
+                    background-color 0.25s ease-in-out 0s;
+                -webkit-transition:
+                    background-color 0.25s ease-in-out 0s;
+                -moz-transition:
+                    background-color 0.25s ease-in-out 0s;
+                -o-transition:
+                    background-color 0.25s ease-in-out 0s;
+        }
+        
+    </style>
+</head>
 
-    <body>
-        <div class="wrapper">
-            <h1>In every 5 seconds all P will shake - setInterval</h1>
-            <p>This is a simple paragraph</p>
-            <p>This is a simple paragraph</p>
-            <p>This is a simple paragraph</p>
-            <p>This is a simple paragraph</p>
-            <p>This is a simple paragraph</p>
-            <p>This is a simple paragraph</p>
-        </div>
-        <script src="scripts/main.js"></script>
-    </body>
+<body>
+    <div class="wrapper">
+        <h1>What programming languages do you know? Try typing...</h1>
+        <input type="text" placeholder="Autocomplete" id="field">
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+
 </html>
