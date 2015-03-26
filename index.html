@@ -13,6 +13,7 @@
     <!--[if lt IE 9]>
             <script src="scripts/html5shiv.js"></script>
         <![endif]-->
+
     <style>
         
         *{outline: none;}
@@ -43,7 +44,7 @@
             margin: auto;
         }
         
-<<<<<<< HEAD
+
         #result div{
             text-align: center;
             padding: 20px;
@@ -54,6 +55,8 @@
             line-height: 30px;
         }
         
+        a{color: white;}
+        
         #result div:hover{
             background-color: #2f7db7;
         }
@@ -63,52 +66,29 @@
           text-align: center;
           padding: 20px;
             margin-bottom: 10px;
-            background-color: rgba(73, 178, 255, 0.29) !important;
+            background-color: rgba(26, 180, 97, 0.29) !important;
             color: white;
-=======
-        ul li{
-            padding: 10px;
-            background-color: rgba(31, 144, 195, 0.46);
-            border-bottom: 1px solid white;
-            cursor: pointer;
-            color: white;
-            font-size: 20px;
-            line-height: 25px;
         }
         
-        ul li:hover{
-            background-color: rgba(31, 144, 195, 0.77);
-            transition:
-                    background-color 0.25s ease-in-out 0s;
-                -webkit-transition:
-                    background-color 0.25s ease-in-out 0s;
-                -moz-transition:
-                    background-color 0.25s ease-in-out 0s;
-                -o-transition:
-                    background-color 0.25s ease-in-out 0s;
->>>>>>> d6a30f269cc7e7a10ce038e3925e59f422d8c2bb
-        }
         
     </style>
+
 </head>
 
 <body>
     <div class="wrapper">
-<<<<<<< HEAD
+
         <h1>What programming languages do you know? Try typing...</h1>
         <input type="text" placeholder="Autocomplete" id="field">
         <div id="result"></div>
     </div>
     <script src="scripts/main.js"></script>
     <script>
-        $('#field').autoComplete();
+        $(document).ready(function(){
+            $('#field').autoComplete(); 
+        });
     </script>
-=======
-        <h1>You can search Wikipedia from here</h1>
-        <input type="text" placeholder="Search for..." id="field">
-    </div>
-    <script src="scripts/main.js"></script>
->>>>>>> d6a30f269cc7e7a10ce038e3925e59f422d8c2bb
+
 </body>
 
 </html>
