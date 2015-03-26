@@ -71,7 +71,8 @@ img{
     box-sizing: border-box;
 }
 
-.wrapper{
+.wrapper,
+ul.ui-autocomplete{
     max-width: 920px;
     margin: auto;
     position: relative;

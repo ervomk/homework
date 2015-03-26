@@ -1,0 +1,24 @@
+{
+  "name": "sedcAutocomplete",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ervomk/autocomplete",
+  "main":"scripts/main.js",
+  "authors": [
+  	"Ilche <test@gmail.com>",
+    "Ervo <ervomk@gmail.com>"
+  ],
+  "description": "Auto Complete",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "~3.2.6",
+    "jquery-ui": "~1.11.4",
+    "jquery": "~2.1.3"
+  }
+}
