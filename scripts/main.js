@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -29,3 +30,22 @@
     }
 
 }(jQuery));
+=======
+$("#field").autocomplete({
+    source: function (request, response) {
+        $.ajax({
+            url: "http://en.wikipedia.org/w/api.php",
+            dataType: "jsonp",
+            data: {
+                'action': "opensearch",
+                'format': "json",
+                'search': request.term
+            },
+            success: function (data) {
+                response(data[1]);
+                $('ul li').addClass('animated fadeIn');
+            }
+        });
+    }
+});
+>>>>>>> d6a30f269cc7e7a10ce038e3925e59f422d8c2bb
