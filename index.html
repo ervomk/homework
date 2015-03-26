@@ -43,26 +43,27 @@
             margin: auto;
         }
         
-        ul li{
-            padding: 10px;
-            background-color: rgba(31, 144, 195, 0.46);
-            border-bottom: 1px solid white;
-            cursor: pointer;
+        #result div{
+            text-align: center;
+            padding: 20px;
+            background-color: #49b2ff;
+            margin-bottom: 5px;
             color: white;
-            font-size: 20px;
-            line-height: 25px;
+            font-size: 25px;
+            line-height: 30px;
         }
         
-        ul li:hover{
-            background-color: rgba(31, 144, 195, 0.77);
-            transition:
-                    background-color 0.25s ease-in-out 0s;
-                -webkit-transition:
-                    background-color 0.25s ease-in-out 0s;
-                -moz-transition:
-                    background-color 0.25s ease-in-out 0s;
-                -o-transition:
-                    background-color 0.25s ease-in-out 0s;
+        #result div:hover{
+            background-color: #2f7db7;
+        }
+        
+        .searchFor{
+            font-size: 20px;
+          text-align: center;
+          padding: 20px;
+            margin-bottom: 10px;
+            background-color: rgba(73, 178, 255, 0.29) !important;
+            color: white;
         }
         
     </style>
@@ -72,8 +73,12 @@
     <div class="wrapper">
         <h1>What programming languages do you know? Try typing...</h1>
         <input type="text" placeholder="Autocomplete" id="field">
+        <div id="result"></div>
     </div>
     <script src="scripts/main.js"></script>
+    <script>
+        $('#field').autoComplete();
+    </script>
 </body>
 
 </html>
